@@ -2,7 +2,7 @@
 
 Parse or print timestamps.
 
-Because I'm tired of reading the manpage every damn time I use date(1).
+Because I'm tired of reading the man page every damn time I use date(1).
 
 ## Examples
 
@@ -25,6 +25,11 @@ Parse an RFC3339 timestamp:
 
     $ datef -i RFC3339 -o unix 2015-09-24T17:57:03-07:00
     1443142623
+
+Use your own crazy format ([reference](https://golang.org/pkg/time/)):
+
+    $ datef -o 'Jan 1, 2006 at 3:04pm'
+    Sep 9, 2015 at 6:10pm
 
 Parse multiple timestamps at once:
 
