@@ -63,6 +63,7 @@ func printTimestamp(s string, iformat, oformat format) (ok bool) {
 		fmt.Fprintln(os.Stderr, err)
 		return false
 	}
+	t = t.UTC()
 	fmt.Println(oformat.format(t))
 	return true
 }
