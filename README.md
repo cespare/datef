@@ -4,6 +4,10 @@ Parse or print timestamps.
 
 Because I'm tired of reading the man page every damn time I use date(1).
 
+## Install
+
+    go install github.com/cespare/datef@latest
+
 ## Examples
 
 Print the current time (defaults to RFC3339):
