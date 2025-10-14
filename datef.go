@@ -22,7 +22,7 @@ func main() {
 	oformat := newFormat(*oFormatStr)
 
 	if flag.NArg() == 0 {
-		fmt.Println(oformat.format(time.Now()))
+		fmt.Println(oformat.format(time.Now().UTC()))
 		return
 	}
 	if flag.NArg() == 1 && flag.Arg(0) == "-" {
